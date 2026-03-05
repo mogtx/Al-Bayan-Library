@@ -455,22 +455,22 @@ let books = [
   // النحو
   { id: 1, title: "ألفية ابن مالك", author: "ابن مالك", category: "نحو", reads: 1250, rating: 4.9, fav: false, desc: "ألفية ابن مالك في النحو العربي هي قصيدة طويلة تتناول القواعد النحوية.", pages: 250, year: 1200, cover: "navy",  pdf: "../kotob/book-alfyah.pdf" },
   { id: 2, title: "المغني في النحو", author: "ابن عقيل", category: "نحو", reads: 980, rating: 4.7, fav: false, desc: "كتاب شامل في النحو العربي.", pages: 480, year: 1220, cover: "blue",  pdf: "/Al-Bayan-Library/book-mgni.pdf" },
-  { id: 3, title: "الجرير والتنب", author: "المرزوقي", category: "نحو", reads: 650, rating: 4.5, fav: false, desc: "شرح نفيس على جرير والفرزدق.", pages: 320, year: 1100, cover: "green",  pdf: "../kotob/book-jarir.pdf" },
-  { id: 4, title: "التسهيل", author: "ابن مالك", category: "نحو", reads: 820, rating: 4.6, fav: false, desc: "مختصر في النحو.", pages: 180, year: 1210, cover: "purple",  pdf: "../kotob/book-tashel.pdf" },
-  { id: 5, title: "شرح كافية الحافظ", author: "ابن الحاجب", category: "نحو", reads: 540, rating: 4.4, fav: false, desc: "شرح كتاب كافية الحافظ.", pages: 420, year: 1300, cover: "orange",  pdf: "../kotob/book-kafyah.pdf" },
+  { id: 3, title: "الجرير والتنب", author: "المرزوقي", category: "نحو", reads: 650, rating: 4.5, fav: false, desc: "شرح نفيس على جرير والفرزدق.", pages: 320, year: 1100, cover: "green",  pdf: "/Al-Bayan-Library/book-jarir.pdf" },
+  { id: 4, title: "التسهيل", author: "ابن مالك", category: "نحو", reads: 820, rating: 4.6, fav: false, desc: "مختصر في النحو.", pages: 180, year: 1210, cover: "purple",  pdf: "/Al-Bayan-Library/book-tashel.pdf" },
+  { id: 5, title: "شرح كافية الحافظ", author: "ابن الحاجب", category: "نحو", reads: 540, rating: 4.4, fav: false, desc: "شرح كتاب كافية الحافظ.", pages: 420, year: 1300, cover: "orange",  pdf: "/Al-Bayan-Library/book-kafyah.pdf" },
   
   // الشعر
   { id: 6, title: "ديوان المتنبي", author: "أبو الطيب المتنبي", category: "شعر", reads: 2100, rating: 4.95, fav: false, desc: "مجموعة من أشعار المتنبي الخالدة.", pages: 500, year: 960, cover: "purple",  pdf: "../kotob/book-motanabi.pdf" },
-  { id: 7, title: "ديوان امرئ القيس", author: "امرئ القيس", category: "شعر", reads: 1850, rating: 4.8, fav: false, desc: "ديوان رائد الشعر الجاهلي.", pages: 380, year: 550, cover: "gold",  pdf: "../kotob/book-qais.pdf" },
-  { id: 8, title: "ديوان الحسن بن هرمة", author: "الحسن بن هرمة", category: "شعر", reads: 1200, rating: 4.7, fav: false, desc: "من اشهر الدواوين.", pages: 290, year: 650, cover: "red",  pdf: "../kotob/book-qais.pdf" },
-  { id: 9, title: "ديوان البحتري", author: "البحتري", category: "شعر", reads: 950, rating: 4.6, fav: false, desc: "مجموعة من اشعار البحتري.", pages: 420, year: 900, cover: "teal",  pdf: "../kotob/book-bhtare.pdf" },
-  { id: 10, title: "ديوان ابن الرومي", author: "ابن الرومي", category: "شعر", reads: 780, rating: 4.5, fav: false, desc: "ديوان شاعر كبير.", pages: 350, year: 890, cover: "navy",  pdf: "../kotob/book-romy.pdf" },
+  { id: 7, title: "ديوان امرئ القيس", author: "امرئ القيس", category: "شعر", reads: 1850, rating: 4.8, fav: false, desc: "ديوان رائد الشعر الجاهلي.", pages: 380, year: 550, cover: "gold",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
+  { id: 8, title: "ديوان الحسن بن هرمة", author: "الحسن بن هرمة", category: "شعر", reads: 1200, rating: 4.7, fav: false, desc: "من اشهر الدواوين.", pages: 290, year: 650, cover: "red",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
+  { id: 9, title: "ديوان البحتري", author: "البحتري", category: "شعر", reads: 950, rating: 4.6, fav: false, desc: "مجموعة من اشعار البحتري.", pages: 420, year: 900, cover: "teal",  pdf: "/Al-Bayan-Library/book-bhtare.pdf" },
+  { id: 10, title: "ديوان ابن الرومي", author: "ابن الرومي", category: "شعر", reads: 780, rating: 4.5, fav: false, desc: "ديوان شاعر كبير.", pages: 350, year: 890, cover: "navy",  pdf: "/Al-Bayan-Library/book-romy.pdf" },
 
   // البلاغة
-  { id: 11, title: "دلائل الإعجاز", author: "عبد القاهر الجرجاني", category: "بلاغة", reads: 890, rating: 4.7, fav: false, desc: "كتاب في بيان دلائل الإعجاز.", pages: 320, year: 1075, cover: "green",  pdf: "../kotob/book-i3jaz.pdf" },
-  { id: 12, title: "البرهان في علوم القرآن", author: "الزمخشري", category: "بلاغة", reads: 720, rating: 4.6, fav: false, desc: "مقال في علوم البلاغة.", pages: 280, year: 1140, cover: "purple",  pdf: "../kotob/book-brhan.pdf" },
-  { id: 13, title: "عروس الأفراح", author: "السيوطي", category: "بلاغة", reads: 580, rating: 4.5, fav: false, desc: "كتاب في علوم البلاغة.", pages: 220, year: 1500, cover: "orange",  pdf: "../kotob/book-3ros.pdf" },
-  { id: 15, title: "الموالي في المعاني", author: "السيوطي", category: "بلاغة", reads: 390, rating: 4.3, fav: false, desc: "شرح نفيس.", pages: 250, year: 1450, cover: "teal",  pdf: "../kotob/book-m3ani.pdf" },
+  { id: 11, title: "دلائل الإعجاز", author: "عبد القاهر الجرجاني", category: "بلاغة", reads: 890, rating: 4.7, fav: false, desc: "كتاب في بيان دلائل الإعجاز.", pages: 320, year: 1075, cover: "green",  pdf: "/Al-Bayan-Library/book-i3jaz.pdf" },
+  { id: 12, title: "البرهان في علوم القرآن", author: "الزمخشري", category: "بلاغة", reads: 720, rating: 4.6, fav: false, desc: "مقال في علوم البلاغة.", pages: 280, year: 1140, cover: "purple",  pdf: "/Al-Bayan-Library/book-brhan.pdf" },
+  { id: 13, title: "عروس الأفراح", author: "السيوطي", category: "بلاغة", reads: 580, rating: 4.5, fav: false, desc: "كتاب في علوم البلاغة.", pages: 220, year: 1500, cover: "orange",  pdf: "/Al-Bayan-Library/book-3ros.pdf" },
+  { id: 15, title: "الموالي في المعاني", author: "السيوطي", category: "بلاغة", reads: 390, rating: 4.3, fav: false, desc: "شرح نفيس.", pages: 250, year: 1450, cover: "teal",  pdf: "/Al-Bayan-Library/book-m3ani.pdf" },
 
   // الحديث
   { id: 21, title: "صحيح البخاري", author: "الإمام البخاري", category: "حديث", reads: 2500, rating: 5.0, fav: false, desc: "أصح كتب السنة النبوية.", pages: 2500, year: 870, cover: "navy",  pdf: "../kotob/book-qais.pdf" },
@@ -480,13 +480,12 @@ let books = [
   { id: 25, title: "سنن النسائي", author: "النسائي", category: "حديث", reads: 1150, rating: 4.6, fav: false, desc: "من كتب السنة.", pages: 1500, year: 915, cover: "teal",  pdf: "../kotob/book-qais.pdf" },
 
   // التاريخ
-  { id: 26, title: "مختصر تاريخ العرب", author: "حسن إبراهيم حسن", category: "تاريخ", reads: 1100, rating: 4.5, fav: false, desc: "ملخص شامل لتاريخ العرب.", pages: 420, year: 1960, cover: "red",  pdf: "../kotob/book-arab.pdf" },
-  { id: 29, title: "تاريخ ابن خلدون", author: "ابن خلدون", category: "تاريخ", reads: 1600, rating: 4.95, fav: false, desc: "مقدمة في علم العمران.", pages: 1200, year: 1375, cover: "green",  pdf: "../kotob/book-ebn.pdf" },
+  { id: 26, title: "مختصر تاريخ العرب", author: "حسن إبراهيم حسن", category: "تاريخ", reads: 1100, rating: 4.5, fav: false, desc: "ملخص شامل لتاريخ العرب.", pages: 420, year: 1960, cover: "red",  pdf: "/Al-Bayan-Library/book-arab.pdf" },
+  { id: 29, title: "تاريخ ابن خلدون", author: "ابن خلدون", category: "تاريخ", reads: 1600, rating: 4.95, fav: false, desc: "مقدمة في علم العمران.", pages: 1200, year: 1375, cover: "green",  pdf: "/Al-Bayan-Library/book-ebn.pdf" },
 
   // الأدب
-  { id: 31, title: "الحديث في الفن", author: "أحمد حسن الزيات", category: "أدب", reads: 750, rating: 4.6, fav: false, desc: "دراسة شاملة لفن الحديث.", pages: 180, year: 1945, cover: "orange",  pdf: "../kotob/book-hdath.pdf" },
-  { id: 34, title: "المقامات", author: "بديع الزمان الهنائي", category: "أدب", reads: 780, rating: 4.7, fav: false, desc: "مجموعة من المقامات.", pages: 340, year: 1087, cover: "teal",  pdf: "../kotob/book-mqamat.pdf" },
-  { id: 35, title: "الأغاني", author: "الأصفهاني", category: "أدب", reads: 920, rating: 4.8, fav: false, desc: "من اكبر كتب الأدب.", pages: 3000, year: 980, cover: "red",  pdf: "../kotob/book-agani.pdf" },
+  { id: 31, title: "الحديث في الفن", author: "أحمد حسن الزيات", category: "أدب", reads: 750, rating: 4.6, fav: false, desc: "دراسة شاملة لفن الحديث.", pages: 180, year: 1945, cover: "orange",  pdf: "/Al-Bayan-Library/book-hdath.pdf" },
+  { id: 35, title: "الأغاني", author: "الأصفهاني", category: "أدب", reads: 920, rating: 4.8, fav: false, desc: "من اكبر كتب الأدب.", pages: 3000, year: 980, cover: "red",  pdf: "/Al-Bayan-Library/book-agani.pdf" },
 
 ];
 
@@ -1054,6 +1053,7 @@ window.showBarcode = showBarcode;
 window.closeBarcodeModal = closeBarcodeModal;
 window.loadPreferences = loadPreferences;
 window.translatePage = translatePage;
+
 
 
 
