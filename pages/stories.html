@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="storiesPageTitle">القصص | مكتبة البيان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body {
+    padding-top: 80px;
+    background: var(--dark-bg);
+  }
+  .page-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  }
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .page-header p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .stories-section {
+    padding: 60px 0;
+  }
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  .story-card {
+    background: var(--dark-card);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+  }
+  .story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(99, 102, 241, 0.3);
+  }
+  .story-image {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .story-image.night { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); }
+  .story-image.desert { background: linear-gradient(135deg, #78350f 0%, #d97706 100%); }
+  .story-image.sea { background: linear-gradient(135deg, #164e63 0%, #06b6d4 100%); }
+  .story-image.forest { background: linear-gradient(135deg, #14532d 0%, #22c55e 100%); }
+  .story-image.royal { background: linear-gradient(135deg, #4c1d95 0%, #8b5cf6 100%); }
+  .story-image.mountain { background: linear-gradient(135deg, #1e3a5f 0%, #3b82f6 100%); }
+  .story-content {
+    padding: 25px;
+  }
+  .story-category {
+    display: inline-block;
+    padding: 5px 15px;
+    background: rgba(99, 102, 241, 0.2);
+    color: var(--primary-light);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+  .story-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .story-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  .story-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .story-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .author-avatar {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .author-name {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+  .story-reads {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+  }
+  .read-story-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+  .read-story-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
+  }
+</style>
+</head>
+<body>
+
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">📚</span>
+      <span class="logo-text"><a href="../index.html" style="text-decoration:none;color:inherit;" data-i18n="libraryName">مكتبة <span class="highlight">البيان</span></a></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html" data-i18n="home">الرئيسية</a></li>
+      <li><a href="books.html" data-i18n="books">الكتب</a></li>
+      <li><a href="stories.html" class="active" data-i18n="stories">القصص</a></li>
+      <li><a href="about.html" data-i18n="about">من نحن</a></li>
+      <li><a href="contact.html" data-i18n="contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-btn" onclick="toggleTheme()" data-i18n-title="toggleTheme" title="تبديل الوضع"><i class="fas fa-moon"></i></button>
+      <button class="lang-btn" onclick="toggleLanguage()">EN</button>
+      <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h1 data-i18n="arabicStoriesPage">📜 القصص العربية</h1>
+  <p data-i18n="arabicStoriesPageDesc">مجموعة مختارة من أروع القصص العربية والتراثية</p>
+</div>
+
+<section class="stories-section">
+  <div class="container">
+    <div class="stories-grid" id="storiesGrid">
+      <!-- Story 1 -->
+      <div class="story-card">
+        <div class="story-image night">🌙</div>
+        <div class="story-content">
+          <span class="story-category" data-i18n="adventureStories">قصص أنبياء </span>
+          <h3 class="story-title"> قصة سيدنا إبراهيم </h3>
+          <p class="story-desc"> قصة سيدنا إبراهيم عليه السلام</p>
+          <div class="story-meta">
+            <div class="story-author">
+              <div class="author-avatar">M</div>
+              <span class="author-name">Mo Shoman</span>
+            </div>
+            <span class="story-reads"><i class="fas fa-eye"></i> 520</span>
+          </div>
+          <a href="../qesas/story-ibrahim.pdf" class="read-story-btn" data-i18n="readTheStory">اقرأ القصة</a>
+        </div>
+      </div>
+
+      <!-- Story 2 -->
+      <div class="story-card">
+        <div class="story-image desert">🏜️</div>
+        <div class="story-content">
+          <span class="story-category" data-i18n="heritageStories">قصص إسلامية</span>
+          <h3 class="story-title">غزوة خيبر</h3>
+          <p class="story-desc">هذه القصة تتحدث عن أحد الغزوات الإسلامية </p>
+          <div class="story-meta">
+            <div class="story-author">
+              <div class="author-avatar">M</div>
+              <span class="author-name">Mo Shoman</span>
+            </div>
+            <span class="story-reads"><i class="fas fa-eye"></i> 380</span>
+          </div>
+          <a href="../qesas/story-khaibar.pdf" class="read-story-btn" data-i18n="readTheStory">اقرأ القصة</a>
+        </div>
+      </div>
+
+      <!-- Story 3 -->
+      <div class="story-card">
+        <div class="story-image sea">🌊</div>
+        <div class="story-content">
+          <span class="story-category" data-i18n="seaStories">قصص أنبياء</span>
+          <h3 class="story-title">قصة سيدنا محمد ﷺ</h3>
+          <p class="story-desc">قصة حياة النبي محمد ﷺ في الهجرة المباركة </p>
+          <div class="story-meta">
+            <div class="story-author">
+              <div class="author-avatar">M</div>
+              <span class="author-name">Mo Shoman </span>
+            </div>
+            <span class="story-reads"><i class="fas fa-eye"></i> 450</span>
+          </div>
+          <a href="../qesas/story-mohamad.pdf" class="read-story-btn" data-i18n="readTheStory">اقرأ القصة</a>
+        </div>
+      </div>
+
+      <!-- Story 4 -->
+      <div class="story-card">
+        <div class="story-image forest">🌲</div>
+        <div class="story-content">
+          <span class="story-category" data-i18n="natureStories">قصص طبيعة</span>
+          <h3 class="story-title">قصة الدب المريض </h3>
+          <p class="story-desc">قصة سحرية عن دب محبوب ولكنه مريض والحيوانات تساعده في الغابة </p>
+          <div class="story-meta">
+            <div class="story-author">
+              <div class="author-avatar">M</div>
+              <span class="author-name">Mo Shoman</span>
+            </div>
+            <span class="story-reads"><i class="fas fa-eye"></i> 620</span>
+          </div>
+          <a href="../qesas/story-bear.pdf" class="read-story-btn" data-i18n="readTheStory">اقرأ القصة</a>
+        </div>
+      </div>
+
+      <!-- Story 5 -->
+      <div class="story-card">
+        <div class="story-image royal">👑</div>
+        <div class="story-content">
+          <span class="story-category" data-i18n="historicalStories">قصص تاريخية</span>
+          <h3 class="story-title">قصة ليلى والذئب </h3>
+          <p class="story-desc">قصة عن الفتاة ذات الرداء الأحمر التي تاهت في الغابة أثناء توصيل الطعام لجدتها </p>
+          <div class="story-meta">
+            <div class="story-author">
+              <div class="author-avatar">M</div>
+              <span class="author-name">Mo Shoman</span>
+            </div>
+            <span class="story-reads"><i class="fas fa-eye"></i> 780</span>
+          </div>
+          <a href="../qesas/story-laila.pdf" class="read-story-btn" data-i18n="readTheStory">اقرأ القصة</a>
+        </div>
+      </div>
+
+      <!-- Story 6 -->
+      <div class="story-card">
+        <div class="story-image mountain">🏔️</div>
+        <div class="story-content">
+          <span class="story-category" data-i18n="adventureStories">قصص أنبياء</span>
+          <h3 class="story-title">قصة سيدنا يوسف </h3>
+          <p class="story-desc">قصة سيدنا يوسف عليه السلام وغيرة اخوته منه </p>
+          <div class="story-meta">
+            <div class="story-author">
+              <div class="author-avatar">M</div>
+              <span class="author-name">Mo Shoman</span>
+            </div>
+            <span class="story-reads"><i class="fas fa-eye"></i> 340</span>
+          </div>
+          <a href="../qesas/story-yosef.pdf" class="read-story-btn" data-i18n="readTheStory">اقرأ القصة</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 <span data-i18n="footerBrand">مكتبة البيان</span> - <span data-i18n="copyright">مشروع ثقافي وطني</span></p>
+        <p data-i18n="supervisedBySchool">بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
+         <p>تصميم وتطوير: الطالب المهندس محمد مصطفى شومان</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="../script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    loadPreferences();
+  });
+</script>
+</body>
+</html>
+

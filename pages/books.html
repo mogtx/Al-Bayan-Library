@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="booksPageTitle">الكتب | مكتبة البيان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body {
+    padding-top: 80px;
+    background: var(--dark-bg);
+  }
+  .page-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  }
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .page-header p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">📚</span>
+      <span class="logo-text"><a href="../index.html" style="text-decoration:none;color:inherit;" data-i18n="libraryName">مكتبة <span class="highlight">البيان</span></a></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html" data-i18n="home">الرئيسية</a></li>
+      <li><a href="books.html" class="active" data-i18n="books">الكتب</a></li>
+      <li><a href="stories.html" data-i18n="stories">القصص</a></li>
+      <li><a href="about.html" data-i18n="about">من نحن</a></li>
+      <li><a href="contact.html" data-i18n="contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-btn" onclick="toggleTheme()" data-i18n-title="toggleTheme" title="تبديل الوضع"><i class="fas fa-moon"></i></button>
+      <button class="lang-btn" onclick="toggleLanguage()">EN</button>
+      <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h1 data-i18n="booksLibrary">📖 مكتبة الكتب</h1>
+  <p data-i18n="booksLibraryDesc">استكشف مجموعة متنوعة من الكتب العربية في مختلف التخصصات والعلوم</p>
+</div>
+
+<section class="books-section" id="books">
+  <div class="container">
+    <div class="search-filter-bar">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" data-i18n-placeholder="searchForBook" placeholder="ابحث عن كتاب..." oninput="filterBooks()">
+      </div>
+      <div class="filter-group">
+        <select id="categoryFilter" onchange="filterBooks()">
+          <option value="all" data-i18n="allCategoriesOption">جميع التصنيفات</option>
+          <option value="نحو" data-i18n="grammarFull">النحو</option>
+          <option value="شعر" data-i18n="poetryFull">الشعر</option>
+          <option value="بلاغة" data-i18n="rhetoricFull">البلاغة</option>
+          <option value="حديث" data-i18n="hadithFull">الحديث</option>
+          <option value="تاريخ" data-i18n="historyFull">التاريخ</option>
+          <option value="أدب" data-i18n="literatureFull">الأدب</option>
+        </select>
+        <select id="sortFilter" onchange="filterBooks()">
+          <option value="default" data-i18n="sortBy">الترتيب</option>
+          <option value="popular" data-i18n="mostRead">الأكثر قراءة</option>
+          <option value="rating" data-i18n="highestRated">الأعلى تقييماً</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <button class="tab-btn active" data-tab="all" onclick="setTab('all')" data-i18n="allOption">الكل</button>
+      <button class="tab-btn" data-tab="popular" onclick="setTab('popular')" data-i18n="mostRead">الأكثر قراءة</button>
+      <button class="tab-btn" data-tab="top" onclick="setTab('top')" data-i18n="highestRated">الأعلى تقييماً</button>
+      <button class="tab-btn" data-tab="favorites" onclick="setTab('favorites')" data-i18n="favoritesOption"><i class="fas fa-heart"></i> المفضلة</button>
+    </div>
+
+    <div class="books-grid" id="booksGrid"></div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 <span data-i18n="footerBrand">مكتبة البيان</span> - <span data-i18n="copyright">مشروع ثقافي وطني</span></p>
+        <p data-i18n="supervisedBySchool">بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
+         <p>تصميم وتطوير: الطالب المهندس محمد مصطفى شومان</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="bookModal">
+  <div class="modal-container">
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    <div class="modal-body" id="modalContent"></div>
+  </div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="../script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    loadPreferences();
+    displayBooks();
+  });
+</script>
+</body>
+</html>
+

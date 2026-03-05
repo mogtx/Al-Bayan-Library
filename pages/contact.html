@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="contactPageTitle">تواصل معنا | مكتبة البيان</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body {
+    padding-top: 80px;
+    background: var(--dark-bg);
+  }
+  .page-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  }
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  .page-header p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contact-page-section {
+    padding: 60px 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="main-header">
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">📚</span>
+      <span class="logo-text"><a href="../index.html" style="text-decoration:none;color:inherit;" data-i18n="libraryName">مكتبة <span class="highlight">البيان</span></a></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html" data-i18n="home">الرئيسية</a></li>
+      <li><a href="books.html" data-i18n="books">الكتب</a></li>
+      <li><a href="stories.html" data-i18n="stories">القصص</a></li>
+      <li><a href="about.html" data-i18n="about">من نحن</a></li>
+      <li><a href="contact.html" class="active" data-i18n="contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-btn" onclick="toggleTheme()" data-i18n-title="toggleTheme" title="تبديل الوضع"><i class="fas fa-moon"></i></button>
+      <button class="lang-btn" onclick="toggleLanguage()">EN</button>
+      <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <h1 data-i18n="contactUsPage">📬 تواصل معنا</h1>
+  <p data-i18n="contactUsPageDesc">نحن هنا للإجابة على استفساراتكم واقتراحاتكم. لا تترددوا في التواصل معنا</p>
+</div>
+
+<section class="contact-page-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div class="contact-details">
+            <h4 data-i18n="emailAddress">البريد الإلكتروني</h4>
+            <p>m77md.shoman@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div class="contact-details">
+            <h4 data-i18n="whatsappApp">الواتس أب</h4>
+            <p>+962 782059915</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="contact-details">
+            <h4 data-i18n="locationAddress">الموقع</h4>
+            <p data-i18n="schoolLocation">مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر - الأردن</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div class="contact-details">
+            <h4 data-i18n="workingHoursPage">أوقات العمل</h4>
+            <p data-i18n="workingHoursPageText">السبت - الخميس: 8ص - 4م</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form onsubmit="submitContact(event)">
+          <div class="form-group">
+            <input type="text" id="contactName" required data-i18n-placeholder="yourNameInput" placeholder="الاسم">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-group">
+            <input type="email" id="contactEmail" required data-i18n-placeholder="yourEmailInput" placeholder="البريد الإلكتروني">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="form-group">
+            <input type="text" id="contactSubject" required data-i18n-placeholder="subjectInput" placeholder="الموضوع">
+            <i class="fas fa-tag"></i>
+          </div>
+          <div class="form-group">
+            <textarea id="contactMessage" required data-i18n-placeholder="yourMessageInput" placeholder="رسالتك..." rows="5"></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span data-i18n="sendMessageBtn">إرسال الرسالة</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="footer-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 <span data-i18n="footerBrand">مكتبة البيان</span> - <span data-i18n="copyright">مشروع ثقافي وطني</span></p>
+        <p data-i18n="supervisedBySchool">بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
+         <p>تصميم وتطوير: الطالب المهندس محمد مصطفى شومان</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="../script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    loadPreferences();
+  });
+</script>
+</body>
+</html>
+
