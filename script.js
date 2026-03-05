@@ -453,14 +453,12 @@ const translations = {
 // Books Database
 let books = [
   // النحو
-  { id: 1, title: "ألفية ابن مالك", author: "ابن مالك", category: "نحو", reads: 1250, rating: 4.9, fav: false, desc: "ألفية ابن مالك في النحو العربي هي قصيدة طويلة تتناول القواعد النحوية.", pages: 250, year: 1200, cover: "navy",  pdf: "../kotob/book-alfyah.pdf" },
   { id: 2, title: "المغني في النحو", author: "ابن عقيل", category: "نحو", reads: 980, rating: 4.7, fav: false, desc: "كتاب شامل في النحو العربي.", pages: 480, year: 1220, cover: "blue",  pdf: "/Al-Bayan-Library/book-mgni.pdf" },
   { id: 3, title: "الجرير والتنب", author: "المرزوقي", category: "نحو", reads: 650, rating: 4.5, fav: false, desc: "شرح نفيس على جرير والفرزدق.", pages: 320, year: 1100, cover: "green",  pdf: "/Al-Bayan-Library/book-jarir.pdf" },
   { id: 4, title: "التسهيل", author: "ابن مالك", category: "نحو", reads: 820, rating: 4.6, fav: false, desc: "مختصر في النحو.", pages: 180, year: 1210, cover: "purple",  pdf: "/Al-Bayan-Library/book-tashel.pdf" },
-  { id: 5, title: "شرح كافية الحافظ", author: "ابن الحاجب", category: "نحو", reads: 540, rating: 4.4, fav: false, desc: "شرح كتاب كافية الحافظ.", pages: 420, year: 1300, cover: "orange",  pdf: "/Al-Bayan-Library/book-kafyah.pdf" },
   
   // الشعر
-  { id: 6, title: "ديوان المتنبي", author: "أبو الطيب المتنبي", category: "شعر", reads: 2100, rating: 4.95, fav: false, desc: "مجموعة من أشعار المتنبي الخالدة.", pages: 500, year: 960, cover: "purple",  pdf: "../kotob/book-motanabi.pdf" },
+  { id: 6, title: "ديوان المتنبي", author: "أبو الطيب المتنبي", category: "شعر", reads: 2100, rating: 4.95, fav: false, desc: "مجموعة من أشعار المتنبي الخالدة.", pages: 500, year: 960, cover: "purple",  pdf: "/Al-Bayan-Library/book-motanabi.pdf" },
   { id: 7, title: "ديوان امرئ القيس", author: "امرئ القيس", category: "شعر", reads: 1850, rating: 4.8, fav: false, desc: "ديوان رائد الشعر الجاهلي.", pages: 380, year: 550, cover: "gold",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
   { id: 8, title: "ديوان الحسن بن هرمة", author: "الحسن بن هرمة", category: "شعر", reads: 1200, rating: 4.7, fav: false, desc: "من اشهر الدواوين.", pages: 290, year: 650, cover: "red",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
   { id: 9, title: "ديوان البحتري", author: "البحتري", category: "شعر", reads: 950, rating: 4.6, fav: false, desc: "مجموعة من اشعار البحتري.", pages: 420, year: 900, cover: "teal",  pdf: "/Al-Bayan-Library/book-bhtare.pdf" },
@@ -1053,6 +1051,7 @@ window.showBarcode = showBarcode;
 window.closeBarcodeModal = closeBarcodeModal;
 window.loadPreferences = loadPreferences;
 window.translatePage = translatePage;
+
 
 
 
