@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتبة البيان | المنصة الثقافية الوطنية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+
+
+</head>
+<header class="main-header">
+  <div class="header-particles" id="particles"></div>
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">📚</span>
+      <span class="logo-text">مكتبة <span class="highlight">البيان</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active" data-i18n="home">الرئيسية</a></li>
+      <li><a href="pages/books.html" data-i18n="books">الكتب</a></li>
+      <li><a href="pages/stories.html" data-i18n="stories">القصص</a></li>
+      <li><a href="pages/about.html" data-i18n="about">من نحن</a></li>
+      <li><a href="pages/contact.html" data-i18n="contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="barcode-btn" onclick="showBarcode()" data-i18n-title="barcode" title="الباركود">
+        <i class="fas fa-barcode"></i>
+      </button>
+      <button class="theme-btn" onclick="toggleTheme()" data-i18n-title="toggleTheme" title="تبديل الوضع">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="lang-btn" onclick="toggleLanguage()">EN</button>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="hero-section" id="home">
+    <div class="hero-content">
+      <h1 class="hero-title" data-aos="fade-up">
+        <span class="title-line" data-i18n="welcomeTo">مرحباً بك في</span>
+        <span class="title-main" data-i18n="libraryName">مكتبة البيان</span>
+        <span class="title-sub" data-i18n="platformSubtitle">منصة ثقافة عربية وطنية</span>
+      </h1>
+      <p class="hero-description" data-i18n="heroDesc">نقدم لك تجربة قراءة فريدة مع أفضل الكتب العربية والإسلامية في مختلف العلوم والآداب</p>
+      <div class="hero-buttons">
+        <a href="pages/books.html" class="btn-primary" data-i18n="exploreBooks">استكشف الكتب <i class="fas fa-arrow-left"></i></a>
+        <a href="pages/about.html" class="btn-secondary" data-i18n="learnMore">اعرف المزيد</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-book book-1">📖</div>
+      <div class="floating-book book-2">📕</div>
+      <div class="floating-book book-3">📗</div>
+      <div class="hero-circle"></div>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="stat-icon"><i class="fas fa-book"></i></div>
+      <div class="stat-number" data-target="50">0</div>
+      <div class="stat-label" data-i18n="book">كتاب</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="stat-icon"><i class="fas fa-users"></i></div>
+      <div class="stat-number" data-target="1200">0</div>
+      <div class="stat-label" data-i18n="reader">قارئ</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="stat-icon"><i class="fas fa-eye"></i></div>
+      <div class="stat-number" data-target="8500">0</div>
+      <div class="stat-label" data-i18n="reads">قراءة</div>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+      <div class="stat-icon"><i class="fas fa-star"></i></div>
+      <div class="stat-number" data-target="4.8" data-decimal="true">0</div>
+      <div class="stat-label" data-i18n="rating">تقييم</div>
+    </div>
+  </div>
+</header>
+
+<!-- Featured Book of Week -->
+<section class="featured-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">مميز</span>
+      <h2>كتاب الأسبوع</h2>
+    </div>
+    <div class="featured-book" id="featuredBook">
+      <!-- Will be populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Books Section -->
+<section class="books-section" id="books">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">المكتبة</span>
+      <h2>الكتب المتوفرة</h2>
+      <p>مجموعة مختارة من أفضل الكتب العربية في مختلف التخصصات</p>
+    </div>
+
+    <div class="search-filter-bar">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="ابحث عن كتاب..." oninput="filterBooks()">
+      </div>
+      <div class="filter-group">
+        <select id="categoryFilter" onchange="filterBooks()">
+          <option value="all">جميع التصنيفات</option>
+          <option value="نحو">النحو</option>
+          <option value="شعر">الشعر</option>
+          <option value="بلاغة">البلاغة</option>
+          <option value="حديث">الحديث</option>
+          <option value="تاريخ">التاريخ</option>
+          <option value="أدب">الأدب</option>
+          <option value="قصص">القصص</option>
+        </select>
+        <select id="sortFilter" onchange="filterBooks()">
+          <option value="default">الترتيب</option>
+          <option value="popular">الأكثر قراءة</option>
+          <option value="rating">الأعلى تقييماً</option>
+          <option value="new">الأحدث</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tabs-container">
+      <button class="tab-btn active" data-tab="all" onclick="setTab('all')">الكل</button>
+      <button class="tab-btn" data-tab="popular" onclick="setTab('popular')">الأكثر قراءة</button>
+      <button class="tab-btn" data-tab="top" onclick="setTab('top')">الأعلى تقييماً</button>
+      <button class="tab-btn" data-tab="favorites" onclick="setTab('favorites')">
+        <i class="fas fa-heart"></i> المفضلة
+      </button>
+    </div>
+
+    <div class="books-grid" id="booksGrid">
+      <!-- Books will be populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">تصفح</span>
+      <h2>تصنيفات الكتب</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card" onclick="filterByCategory('نحو')">
+        <div class="category-icon"><i class="fas fa-pen-fancy"></i></div>
+        <h3>النحو</h3>
+        <p>العلوم النحوية واللغوية</p>
+      </div>
+      <div class="category-card" onclick="filterByCategory('شعر')">
+        <div class="category-icon"><i class="fas fa-feather-alt"></i></div>
+        <h3>الشعر</h3>
+        <p>أشعار العرب الخالدة</p>
+      </div>
+      <div class="category-card" onclick="filterByCategory('بلاغة')">
+        <div class="category-icon"><i class="fas fa-magic"></i></div>
+        <h3>البلاغة</h3>
+        <p>فنون البيان والإعجاز</p>
+      </div>
+      <div class="category-card" onclick="filterByCategory('حديث')">
+        <div class="category-icon"><i class="fas fa-book-open"></i></div>
+        <h3>الحديث</h3>
+        <p>علوم السنة النبوية</p>
+      </div>
+      <div class="category-card" onclick="filterByCategory('تاريخ')">
+        <div class="category-icon"><i class="fas fa-landmark"></i></div>
+        <h3>التاريخ</h3>
+        <p>سير وأحداث</p>
+      </div>
+      <div class="category-card" onclick="filterByCategory('قصص')">
+        <div class="category-icon"><i class="fas fa-book-reader"></i></div>
+        <h3>القصص</h3>
+        <p>قصص عربية وعالمية</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">آراء</span>
+      <h2>ماذا يقول القراء</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="fas fa-quote-right quote-icon"></i>
+          <p>مكتبة رائعة جداً توفر أفضل الكتب العربية. أنصح بها لكل محب للثقافة.</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">ع</div>
+          <div class="author-info">
+            <h4>أحمد محمد</h4>
+            <div class="author-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="fas fa-quote-right quote-icon"></i>
+          <p>تجربة مميزة جداً، التصميم الاحترافي يسهل التصفح والقراءة.</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">خ</div>
+          <div class="author-info">
+            <h4>خالد سعيد</h4>
+            <div class="author-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <i class="fas fa-quote-right quote-icon"></i>
+          <p>صراحة مكتبة استثنائية، كل ما يبحث عنه الطالب والباحث موجود.</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">م</div>
+          <div class="author-info">
+            <h4>محمد علي</h4>
+            <div class="author-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <span class="section-badge">من نحن</span>
+        <h2>مكتبة البيان</h2>
+        <p>مكتبة البيان هي منصة رقمية عربية وطنية تُعنى بعلوم اللغة وآدابها وترسيخ الهوية الثقافية بأسلوب عصري. نحن نسعى لنشر المعرفة والثقافة العربية وإتاحة الكتب النافعة لجميع المتحدثين بالعربية.</p>
+        <div class="about-features">
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>مجموعة متنوعة من الكتب</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>تحميل مباشر وسهل</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>تصنيفات متعددة</span>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-check-circle"></i>
+            <span>تجربة قراءة مميزة</span>
+          </div>
+        </div>
+        <div class="about-contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>رؤيتنا</h3>
+          <p>أن نكون المنصة الأولى للثقافة العربية على الإنترنت</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>رسالتنا</h3>
+          <p>نشر العلم والمعرفة والتراث العربي للعالم</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">تواصل</span>
+      <h2>اتصل بنا</h2>
+      <p>نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h4>البريد الإلكتروني</h4>
+            <p>info@albayan-library.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h4>الهاتف</h4>
+            <p>+962 6 xxx xxxx</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h4>الموقع</h4>
+            <p>لواء الموقر، الأردن</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form onsubmit="submitContact(event)">
+          <div class="form-group">
+            <input type="text" id="contactName" required placeholder="الاسم">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="form-group">
+            <input type="email" id="contactEmail" required placeholder="البريد الإلكتروني">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="form-group">
+            <textarea id="contactMessage" required placeholder="رسالتك..." rows="5"></textarea>
+            <i class="fas fa-comment"></i>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span>إرسال الرسالة</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+  <div class="footer-wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div class="footer-content">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><span class="logo-icon">📚</span> مكتبة البيان</h3>
+          <p>منصة ثقافية عربية وطنية تُعنى بنشر العلم والمعرفة والتراث العربي</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="pages/books.html">الكتب</a></li>
+            <li><a href="pages/stories.html">القصص</a></li>
+            <li><a href="pages/about.html">من نحن</a></li>
+            <li><a href="pages/contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>التصنيفات</h4>
+          <ul>
+            <li><a href="pages/books.html">النحو</a></li>
+            <li><a href="pages/books.html">الشعر</a></li>
+            <li><a href="pages/books.html">البلاغة</a></li>
+            <li><a href="pages/stories.html">القصص</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>النشرة البريدية</h4>
+          <p>اشترك للحصول على آخر الكتب والمقالات</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <button type="submit"><i class="fas fa-arrow-left"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 مكتبة البيان - مشروع ثقافي وطني</p>
+        <p>بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
+        <p>تصميم وتطوير: الطالب المهندس محمد مصطفى شومان</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Book Modal -->
+<div class="modal-overlay" id="bookModal">
+  <div class="modal-container">
+    <button class="modal-close" onclick="closeModal()">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-body" id="modalContent">
+      <!-- Content populated by JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast-container" id="toastContainer"></div>
+
+<!-- Back to Top -->
+<button class="back-to-top" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+
