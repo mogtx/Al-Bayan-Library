@@ -91,8 +91,8 @@
 <section class="featured-section">
   <div class="container">
     <div class="section-header">
-      <span class="section-badge">مميز</span>
-      <h2>كتاب الأسبوع</h2>
+      <span class="section-badge" data-i18n="featured">مميز</span>
+      <h2 data-i18n="bookOfWeek">كتاب الأسبوع</h2>
     </div>
     <div class="featured-book" id="featuredBook">
       <!-- Will be populated by JS -->
@@ -104,42 +104,42 @@
 <section class="books-section" id="books">
   <div class="container">
     <div class="section-header">
-      <span class="section-badge">المكتبة</span>
-      <h2>الكتب المتوفرة</h2>
-      <p>مجموعة مختارة من أفضل الكتب العربية في مختلف التخصصات</p>
+      <span class="section-badge" data-i18n="library">المكتبة</span>
+      <h2 data-i18n="availableBooks">الكتب المتوفرة</h2>
+      <p data-i18n="booksDesc">مجموعة مختارة من أفضل الكتب العربية في مختلف التخصصات</p>
     </div>
 
     <div class="search-filter-bar">
       <div class="search-box">
         <i class="fas fa-search"></i>
-        <input type="text" id="searchInput" placeholder="ابحث عن كتاب..." oninput="filterBooks()">
+        <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث عن كتاب..." oninput="filterBooks()">
       </div>
       <div class="filter-group">
         <select id="categoryFilter" onchange="filterBooks()">
-          <option value="all">جميع التصنيفات</option>
-          <option value="نحو">النحو</option>
-          <option value="شعر">الشعر</option>
-          <option value="بلاغة">البلاغة</option>
-          <option value="حديث">الحديث</option>
-          <option value="تاريخ">التاريخ</option>
-          <option value="أدب">الأدب</option>
-          <option value="قصص">القصص</option>
+          <option value="all" data-i18n="allCategories">جميع التصنيفات</option>
+          <option value="نحو" data-i18n="grammarFull">النحو</option>
+          <option value="شعر" data-i18n="poetryFull">الشعر</option>
+          <option value="بلاغة" data-i18n="rhetoricFull">البلاغة</option>
+          <option value="حديث" data-i18n="hadithFull">الحديث</option>
+          <option value="تاريخ" data-i18n="historyFull">التاريخ</option>
+          <option value="أدب" data-i18n="literatureFull">الأدب</option>
+          <option value="قصص" data-i18n="talesFull">القصص</option>
         </select>
         <select id="sortFilter" onchange="filterBooks()">
-          <option value="default">الترتيب</option>
-          <option value="popular">الأكثر قراءة</option>
-          <option value="rating">الأعلى تقييماً</option>
-          <option value="new">الأحدث</option>
+          <option value="default" data-i18n="sorting">الترتيب</option>
+          <option value="popular" data-i18n="popular">الأكثر قراءة</option>
+          <option value="rating" data-i18n="topRated">الأعلى تقييماً</option>
+          <option value="new" data-i18n="newest">الأحدث</option>
         </select>
       </div>
     </div>
 
     <div class="tabs-container">
-      <button class="tab-btn active" data-tab="all" onclick="setTab('all')">الكل</button>
-      <button class="tab-btn" data-tab="popular" onclick="setTab('popular')">الأكثر قراءة</button>
-      <button class="tab-btn" data-tab="top" onclick="setTab('top')">الأعلى تقييماً</button>
-      <button class="tab-btn" data-tab="favorites" onclick="setTab('favorites')">
-        <i class="fas fa-heart"></i> المفضلة
+      <button class="tab-btn active" data-tab="all" onclick="setTab('all')" data-i18n="all">الكل</button>
+      <button class="tab-btn" data-tab="popular" onclick="setTab('popular')" data-i18n="popular">الأكثر قراءة</button>
+      <button class="tab-btn" data-tab="top" onclick="setTab('top')" data-i18n="topRated">الأعلى تقييماً</button>
+      <button class="tab-btn" data-tab="favorites" onclick="setTab('favorites')" data-i18n="favorites">
+        <i class="fas fa-heart"></i> <span data-i18n="favorites">المفضلة</span>
       </button>
     </div>
 
@@ -153,39 +153,39 @@
 <section class="categories-section">
   <div class="container">
     <div class="section-header">
-      <span class="section-badge">تصفح</span>
-      <h2>تصنيفات الكتب</h2>
+      <span class="section-badge" data-i18n="browse">تصفح</span>
+      <h2 data-i18n="categories">تصنيفات الكتب</h2>
     </div>
     <div class="categories-grid">
       <div class="category-card" onclick="filterByCategory('نحو')">
         <div class="category-icon"><i class="fas fa-pen-fancy"></i></div>
-        <h3>النحو</h3>
-        <p>العلوم النحوية واللغوية</p>
+        <h3 data-i18n="grammarFull">النحو</h3>
+        <p data-i18n="grammarDesc">العلوم النحوية واللغوية</p>
       </div>
       <div class="category-card" onclick="filterByCategory('شعر')">
         <div class="category-icon"><i class="fas fa-feather-alt"></i></div>
-        <h3>الشعر</h3>
-        <p>أشعار العرب الخالدة</p>
+        <h3 data-i18n="poetryFull">الشعر</h3>
+        <p data-i18n="poetryDesc">أشعار العرب الخالدة</p>
       </div>
       <div class="category-card" onclick="filterByCategory('بلاغة')">
         <div class="category-icon"><i class="fas fa-magic"></i></div>
-        <h3>البلاغة</h3>
-        <p>فنون البيان والإعجاز</p>
+        <h3 data-i18n="rhetoricFull">البلاغة</h3>
+        <p data-i18n="rhetoricDesc">فنون البيان والإعجاز</p>
       </div>
       <div class="category-card" onclick="filterByCategory('حديث')">
         <div class="category-icon"><i class="fas fa-book-open"></i></div>
-        <h3>الحديث</h3>
-        <p>علوم السنة النبوية</p>
+        <h3 data-i18n="hadithFull">الحديث</h3>
+        <p data-i18n="hadithDesc">علوم السنة النبوية</p>
       </div>
       <div class="category-card" onclick="filterByCategory('تاريخ')">
         <div class="category-icon"><i class="fas fa-landmark"></i></div>
-        <h3>التاريخ</h3>
-        <p>سير وأحداث</p>
+        <h3 data-i18n="historyFull">التاريخ</h3>
+        <p data-i18n="historyDesc">سير وأحداث</p>
       </div>
-      <div class="category-card" onclick="filterByCategory('قصص')">
+      <div class="category-card" onclick="window.location.href='pages/stories.html'">
         <div class="category-icon"><i class="fas fa-book-reader"></i></div>
-        <h3>القصص</h3>
-        <p>قصص عربية وعالمية</p>
+        <h3 data-i18n="talesFull">القصص</h3>
+        <p data-i18n="talesDesc">قصص عربية وعالمية</p>
       </div>
     </div>
   </div>
@@ -195,19 +195,19 @@
 <section class="testimonials-section">
   <div class="container">
     <div class="section-header">
-      <span class="section-badge">آراء</span>
-      <h2>ماذا يقول القراء</h2>
+      <span class="section-badge" data-i18n="testimonials">آراء</span>
+      <h2 data-i18n="whatReadersSay">ماذا يقول القراء</h2>
     </div>
     <div class="testimonials-grid">
       <div class="testimonial-card">
         <div class="testimonial-content">
           <i class="fas fa-quote-right quote-icon"></i>
-          <p>مكتبة رائعة جداً توفر أفضل الكتب العربية. أنصح بها لكل محب للثقافة.</p>
+          <p data-i18n="testimonial1">مكتبة رائعة جداً توفر أفضل الكتب العربية. أنصح بها لكل محب للثقافة.</p>
         </div>
         <div class="testimonial-author">
-          <div class="author-avatar">ع</div>
+          <div class="author-avatar" data-i18n="testimonial1AuthorAvatar">ع</div>
           <div class="author-info">
-            <h4>أحمد محمد</h4>
+            <h4 data-i18n="testimonial1Author">كريم الساحوري</h4>
             <div class="author-rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -221,12 +221,12 @@
       <div class="testimonial-card">
         <div class="testimonial-content">
           <i class="fas fa-quote-right quote-icon"></i>
-          <p>تجربة مميزة جداً، التصميم الاحترافي يسهل التصفح والقراءة.</p>
+          <p data-i18n="testimonial2">تجربة مميزة جداً، التصميم الاحترافي يسهل التصفح والقراءة.</p>
         </div>
         <div class="testimonial-author">
-          <div class="author-avatar">خ</div>
+          <div class="author-avatar" data-i18n="testimonial2AuthorAvatar">خ</div>
           <div class="author-info">
-            <h4>خالد سعيد</h4>
+            <h4 data-i18n="testimonial2Author">خالد سعيد</h4>
             <div class="author-rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -240,12 +240,12 @@
       <div class="testimonial-card">
         <div class="testimonial-content">
           <i class="fas fa-quote-right quote-icon"></i>
-          <p>صراحة مكتبة استثنائية، كل ما يبحث عنه الطالب والباحث موجود.</p>
+          <p data-i18n="testimonial3">صراحة مكتبة استثنائية، كل ما يبحث عنه الطالب والباحث موجود.</p>
         </div>
         <div class="testimonial-author">
-          <div class="author-avatar">م</div>
+          <div class="author-avatar" data-i18n="testimonial3AuthorAvatar">م</div>
           <div class="author-info">
-            <h4>محمد علي</h4>
+            <h4 data-i18n="testimonial3Author">محمد الشنيطي</h4>
             <div class="author-rating">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -265,31 +265,31 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-content">
-        <span class="section-badge">من نحن</span>
-        <h2>مكتبة البيان</h2>
-        <p>مكتبة البيان هي منصة رقمية عربية وطنية تُعنى بعلوم اللغة وآدابها وترسيخ الهوية الثقافية بأسلوب عصري. نحن نسعى لنشر المعرفة والثقافة العربية وإتاحة الكتب النافعة لجميع المتحدثين بالعربية.</p>
+        <span class="section-badge" data-i18n="aboutTitle">من نحن</span>
+        <h2 data-i18n="aboutHeading">مكتبة البيان</h2>
+        <p data-i18n="aboutDesc">مكتبة البيان هي منصة رقمية عربية وطنية تُعنى بعلوم اللغة وآدابها وترسيخ الهوية الثقافية بأسلوب عصري. نحن نسعى لنشر المعرفة والثقافة العربية وإتاحة الكتب النافعة لجميع المتحدثين بالعربية.</p>
         <div class="about-features">
           <div class="feature-item">
             <i class="fas fa-check-circle"></i>
-            <span>مجموعة متنوعة من الكتب</span>
+            <span data-i18n="diverseBooks">مجموعة متنوعة من الكتب</span>
           </div>
           <div class="feature-item">
             <i class="fas fa-check-circle"></i>
-            <span>تحميل مباشر وسهل</span>
+            <span data-i18n="easyDownload">تحميل مباشر وسهل</span>
           </div>
           <div class="feature-item">
             <i class="fas fa-check-circle"></i>
-            <span>تصنيفات متعددة</span>
+            <span data-i18n="multipleCategories">تصنيفات متعددة</span>
           </div>
           <div class="feature-item">
             <i class="fas fa-check-circle"></i>
-            <span>تجربة قراءة مميزة</span>
+            <span data-i18n="greatExperience">تجربة قراءة مميزة</span>
           </div>
         </div>
         <div class="about-contact-info">
           <div class="info-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</span>
+            <span data-i18n="schoolLocation">مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</span>
           </div>
         </div>
       </div>
@@ -298,15 +298,15 @@
           <div class="about-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
-          <h3>رؤيتنا</h3>
-          <p>أن نكون المنصة الأولى للثقافة العربية على الإنترنت</p>
+          <h3 data-i18n="ourVision">رؤيتنا</h3>
+          <p data-i18n="visionText">أن نكون المنصة الأولى للثقافة العربية على الإنترنت</p>
         </div>
         <div class="about-card">
           <div class="about-icon">
             <i class="fas fa-bullseye"></i>
           </div>
-          <h3>رسالتنا</h3>
-          <p>نشر العلم والمعرفة والتراث العربي للعالم</p>
+          <h3 data-i18n="ourMission">رسالتنا</h3>
+          <p data-i18n="missionText">نشر العلم والمعرفة والتراث العربي للعالم</p>
         </div>
       </div>
     </div>
@@ -317,9 +317,9 @@
 <section class="contact-section" id="contact">
   <div class="container">
     <div class="section-header">
-      <span class="section-badge">تواصل</span>
-      <h2>اتصل بنا</h2>
-      <p>نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
+      <span class="section-badge" data-i18n="contactTitle">تواصل</span>
+      <h2 data-i18n="contactUs">اتصل بنا</h2>
+      <p data-i18n="contactDesc">نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
     </div>
     <div class="contact-grid">
       <div class="contact-info">
@@ -328,7 +328,7 @@
             <i class="fas fa-envelope"></i>
           </div>
           <div class="contact-details">
-            <h4>البريد الإلكتروني</h4>
+            <h4 data-i18n="email">البريد الإلكتروني</h4>
             <p>m77md.shoman@gmail.com</p>
           </div>
         </div>
@@ -337,7 +337,7 @@
             <i class="fas fa-phone"></i>
           </div>
           <div class="contact-details">
-            <h4>الوتس أب</h4>
+            <h4 data-i18n="whatsapp">الواتس أب</h4>
             <p>+962 78 205 9915</p>
           </div>
         </div>
@@ -346,33 +346,32 @@
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="contact-details">
-            <h4>الموقع</h4>
+            <h4 data-i18n="address">الموقع</h4>
             <p>لواء الموقر، الأردن</p>
           </div>
         </div>
         <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.facebook.com/MOHAMAD.2.0.0.8.Sho" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/m7md.shoman" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
       <div class="contact-form">
         <form onsubmit="submitContact(event)">
           <div class="form-group">
-            <input type="text" id="contactName" required placeholder="الاسم">
+            <input type="text" id="contactName" required data-i18n-placeholder="yourName" placeholder="الاسم">
             <i class="fas fa-user"></i>
           </div>
           <div class="form-group">
-            <input type="email" id="contactEmail" required placeholder="البريد الإلكتروني">
+            <input type="email" id="contactEmail" required data-i18n-placeholder="yourEmail" placeholder="البريد الإلكتروني">
             <i class="fas fa-envelope"></i>
           </div>
           <div class="form-group">
-            <textarea id="contactMessage" required placeholder="رسالتك..." rows="5"></textarea>
+            <textarea id="contactMessage" required data-i18n-placeholder="yourMessage" placeholder="رسالتك..." rows="5"></textarea>
             <i class="fas fa-comment"></i>
           </div>
           <button type="submit" class="btn-submit">
-            <span>إرسال الرسالة</span>
+            <span data-i18n="sendMessage">إرسال الرسالة</span>
             <i class="fas fa-paper-plane"></i>
           </button>
         </form>
@@ -392,40 +391,40 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3><span class="logo-icon">📚</span> مكتبة البيان</h3>
-          <p>منصة ثقافية عربية وطنية تُعنى بنشر العلم والمعرفة والتراث العربي</p>
+          <h3><span class="logo-icon">📚</span> <span data-i18n="footerBrand">مكتبة البيان</span></h3>
+          <p data-i18n="footerDesc">منصة ثقافية عربية وطنية تُعنى بنشر العلم والمعرفة والتراث العربي</p>
         </div>
         <div class="footer-links">
-          <h4>روابط سريعة</h4>
+          <h4 data-i18n="quickLinks">روابط سريعة</h4>
           <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="pages/books.html">الكتب</a></li>
-            <li><a href="pages/stories.html">القصص</a></li>
-            <li><a href="pages/about.html">من نحن</a></li>
-            <li><a href="pages/contact.html">تواصل معنا</a></li>
+            <li><a href="index.html" data-i18n="home">الرئيسية</a></li>
+            <li><a href="pages/books.html" data-i18n="books">الكتب</a></li>
+            <li><a href="pages/stories.html" data-i18n="stories">القصص</a></li>
+            <li><a href="pages/about.html" data-i18n="about">من نحن</a></li>
+            <li><a href="pages/contact.html" data-i18n="contact">تواصل معنا</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>التصنيفات</h4>
+          <h4 data-i18n="categoriesFooter">التصنيفات</h4>
           <ul>
-            <li><a href="pages/books.html">النحو</a></li>
-            <li><a href="pages/books.html">الشعر</a></li>
-            <li><a href="pages/books.html">البلاغة</a></li>
-            <li><a href="pages/stories.html">القصص</a></li>
+            <li><a href="pages/books.html" data-i18n="grammarFull">النحو</a></li>
+            <li><a href="pages/books.html" data-i18n="poetryFull">الشعر</a></li>
+            <li><a href="pages/books.html" data-i18n="rhetoricFull">البلاغة</a></li>
+            <li><a href="pages/stories.html" data-i18n="talesFull">القصص</a></li>
           </ul>
         </div>
         <div class="footer-newsletter">
-          <h4>النشرة البريدية</h4>
-          <p>اشترك للحصول على آخر الكتب والمقالات</p>
+          <h4 data-i18n="newsletter">النشرة البريدية</h4>
+          <p data-i18n="newsletterDesc">اشترك للحصول على آخر الكتب والمقالات</p>
           <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
-            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <input type="email" data-i18n-placeholder="yourEmail" placeholder="بريدك الإلكتروني" required>
             <button type="submit"><i class="fas fa-arrow-left"></i></button>
           </form>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 مكتبة البيان - مشروع ثقافي وطني</p>
-        <p>بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
+        <p>© 2026 <span data-i18n="footerBrand">مكتبة البيان</span> - <span data-i18n="copyright">مشروع ثقافي وطني</span></p>
+        <p data-i18n="supervisedBy">بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
         <p>تصميم وتطوير: الطالب المهندس محمد مصطفى شومان</p>
       </div>
     </div>
