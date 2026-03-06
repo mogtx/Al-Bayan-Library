@@ -2369,4 +2369,19 @@ body.light .nav-links {
 body.light .nav-links li {
   border-bottom: 1px solid var(--light-border);
 }
+@media (max-width: 768px){
+
+  .featured-book{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .featured-book-cover{
+    width: 150px;
+    height: 200px;
+  }
+
+}
 
