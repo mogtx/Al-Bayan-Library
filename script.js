@@ -953,26 +953,33 @@ function loadPreferences() {
 
 // Barcode
 function showBarcode() {
-  const barcodeData = "ALBAYAN-LIBRARY-2026";
+
+  const siteLink = "https://mogtx.github.io/Al-Bayan-Library/"; // ضع رابط موقعك هنا
+
   const modal = document.createElement('div');
   modal.className = 'modal-overlay active';
   modal.id = 'barcodeModal';
+
   modal.innerHTML = `
     <div class="modal-container" style="max-width: 400px;">
       <button class="modal-close" onclick="closeBarcodeModal()"><i class="fas fa-times"></i></button>
       <div class="modal-body" style="text-align: center;">
-        <h2 style="margin-bottom: 20px;">الباركود</h2>
-        <svg id="barcode"></svg>
-        <p style="margin-top: 20px; color: var(--text-secondary);">امسح الباركود</p>
+        <h2 style="margin-bottom: 20px;">QR Code</h2>
+        <div id="qrcode" style="display:flex;justify-content:center;"></div>
+        <p style="margin-top: 20px; color: var(--text-secondary);">امسح الكود للدخول للموقع</p>
       </div>
     </div>
   `;
+
   document.body.appendChild(modal);
   document.body.style.overflow = 'hidden';
-  
-  if (typeof JsBarcode !== 'undefined') {
-    JsBarcode("#barcode", barcodeData, { format: "CODE128", width: 2, height: 80, displayValue: true, fontSize: 14 });
-  }
+
+  new QRCode(document.getElementById("qrcode"), {
+    text: siteLink,
+    width: 220,
+    height: 220
+  });
+
 }
 
 function closeBarcodeModal() {
@@ -1051,6 +1058,7 @@ window.showBarcode = showBarcode;
 window.closeBarcodeModal = closeBarcodeModal;
 window.loadPreferences = loadPreferences;
 window.translatePage = translatePage;
+
 
 
 
