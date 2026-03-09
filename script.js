@@ -495,7 +495,7 @@ let books = [
   { id: 24, title: "رحلة الى القمر", author: "أحمد البريم", category: "طلاب المدرسة", reads: 1400, rating: 4.7, fav: false, desc: "قصة رحلة القمر", pages: 1600, year: 889, cover: "red", pdf: "/Al-Bayan-Library/bream.pdf" },
   { id: 25, title: "لغة الضاد ", author: "إبراهيم أبو هليل", category: "طلاب المدرسة", reads: 1150, rating: 4.6, fav: false, desc: " مقالة بعنوان لغة الضاد هوية ..هوية ناطقة و وعاء للحضارة ", pages: 1500, year: 915, cover: "teal", pdf: "/Al-Bayan-Library/abo-hlail.pdf" },
   { id: 41, title: " قصة قصيرة", author: "زاید النعانعة", category: "طلاب المدرسة", reads: 3200, rating: 4.8, fav: false, desc: "قصة قصيرة عن اللغة العربية", pages: 180, year: 2023, cover: "blue", pdf: "/Al-Bayan-Library/zaied.pdf" },
-  { id: 42, title: " غابة القوالق ", author: "طارق أبوغليون", category: "طلاب المدرسة", reads: 2800, rating: 4.9, fav: false, desc: "قصة بعنوان غابة القواعد", pages: 150, year: 2023, cover: "green", pdf: "/Al-Bayan-Library/yosef-abo.pdf" },
+  { id: 42, title: " غابة القواعد ", author: "طارق أبوغليون", category: "طلاب المدرسة", reads: 2800, rating: 4.9, fav: false, desc: "قصة بعنوان غابة القواعد", pages: 150, year: 2023, cover: "green", pdf: "/Al-Bayan-Library/yosef-abo.pdf" },
 
   // التاريخ
   { id: 26, title: "مختصر تاريخ العرب", author: "حسن إبراهيم حسن", category: "تاريخ", reads: 1100, rating: 4.5, fav: false, desc: "ملخص شامل لتاريخ العرب.", pages: 420, year: 1960, cover: "red", pdf: "/Al-Bayan-Library/book-arab.pdf" },
@@ -1079,6 +1079,7 @@ window.showBarcode = showBarcode;
 window.closeBarcodeModal = closeBarcodeModal;
 window.loadPreferences = loadPreferences;
 window.translatePage = translatePage;
+
 
 
 
