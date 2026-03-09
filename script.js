@@ -14,7 +14,7 @@ const translations = {
     toggleTheme: "تبديل الوضع",
     barcode: "الباركود",
     scanBarcode: "امسح الباركود",
-    
+
     // Hero Section
     welcomeTo: "مرحباً بك في",
     libraryName: "مكتبة البيان",
@@ -22,7 +22,7 @@ const translations = {
     heroDesc: "نقدم لك تجربة قراءة فريدة مع أفضل الكتب العربية والإسلامية في مختلف العلوم والآداب",
     exploreBooks: "استكشف الكتب",
     learnMore: "اعرف المزيد",
-    
+
     // Stats
     book: "كتاب",
     books: "كتب",
@@ -32,13 +32,13 @@ const translations = {
     reads: "قراءة",
     readsPlural: "قراءة",
     rating: "تقييم",
-    
+
     // Featured Section
     featured: "مميز",
     bookOfWeek: "كتاب الأسبوع",
     readMore: "قراءة المزيد",
     read: "قراءة",
-    
+
     // Library Section
     library: "المكتبة",
     availableBooks: "الكتب المتوفرة",
@@ -51,7 +51,7 @@ const translations = {
     newest: "الأحدث",
     favorites: "المفضلة",
     all: "الكل",
-    
+
     // Categories Section
     browse: "تصفح",
     categories: "تصنيفات الكتب",
@@ -61,24 +61,24 @@ const translations = {
     poetryFull: "الشعر",
     rhetoric: "بلاغة",
     rhetoricFull: "البلاغة",
-    hadith: "حديث",
-    hadithFull: "الحديث",
+    hadith: "طلاب المدرسة",
+    hadithFull: "طلاب المدرسة",
     history: "تاريخ",
     historyFull: "التاريخ",
     literature: "أدب",
     literatureFull: "الأدب",
     tales: "قصص",
     talesFull: "القصص",
-    
+
     // Grammar descriptions
     grammarDesc: "العلوم النحوية واللغوية",
     poetryDesc: "أشعار العرب الخالدة",
     rhetoricDesc: "فنون البيان والإعجاز",
-    hadithDesc: "علوم السنة النبوية",
+    hadithDesc: "قصص وكتب مدرسية",
     historyDesc: "سير وأحداث",
     talesDesc: "قصص عربية وعالمية",
     literatureDesc: "فنون الأدب العربي",
-    
+
     // Testimonials
     testimonials: "آراء",
     whatReadersSay: "ماذا يقول القراء",
@@ -91,7 +91,7 @@ const translations = {
     testimonial3: "صراحة مكتبة استثنائية، كل ما يبحث عنه الطالب والباحث موجود.",
     testimonial3Author: "محمد الشنيطي",
     testimonial3AuthorAvatar: "م",
-    
+
     // About Section
     aboutTitle: "من نحن",
     aboutHeading: "مكتبة البيان",
@@ -111,7 +111,7 @@ const translations = {
     goalText: "تيسير الوصول للمعرفة العربية لجميع المتحدثين بالعربية",
     location: "الموقع",
     schoolLocation: "مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر",
-    
+
     // Contact Section
     contactTitle: "تواصل",
     contactUs: "اتصل بنا",
@@ -127,7 +127,7 @@ const translations = {
     subject: "الموضوع",
     yourMessage: "رسالتك...",
     sendMessage: "إرسال الرسالة",
-    
+
     // Footer
     footerBrand: "مكتبة البيان",
     footerDesc: "منصة ثقافية عربية وطنية تُعنى بنشر العلم والمعرفة والتراث العربي",
@@ -138,7 +138,7 @@ const translations = {
     yourEmail: "بريدك الإلكتروني",
     copyright: "مشروع ثقافي وطني",
     supervisedBy: "بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر",
-    
+
     // Messages
     noResults: "لا توجد نتائج",
     tryDifferent: "جرب البحث بكلمات مختلفة",
@@ -148,7 +148,7 @@ const translations = {
     subscribed: "شكراً لاشتراكك في النشرة البريدية!",
     fileNotAvailable: "الملف غير متوفر",
     increasedReads: "تمت زيادة قراءات",
-    
+
     // Stories
     arabicStories: "القصص العربية",
     storiesSubtitle: "مجموعة مختارة من أروع القصص العربية والتراثية",
@@ -158,14 +158,14 @@ const translations = {
     natureStories: "قصص طبيعة",
     historicalStories: "قصص تاريخية",
     readStory: "اقرأ القصة",
-    
+
     // Book Modal
     by: "تأليف",
     pages: "صفحات",
     year: "السنة",
     addToFavorites: "إضافة للمفضلة",
     removeFromFavorites: "إزالة من المفضلة",
-    
+
     // Page Headers
     booksPageTitle: "مكتبة الكتب",
     booksPageDesc: "استكشف مجموعة متنوعة من الكتب العربية في مختلف التخصصات والعلوم",
@@ -245,7 +245,7 @@ const translations = {
     toggleTheme: "Toggle Theme",
     barcode: "Barcode",
     scanBarcode: "Scan Barcode",
-    
+
     // Hero Section
     welcomeTo: "Welcome to",
     libraryName: "Al-Bayan Library",
@@ -253,7 +253,7 @@ const translations = {
     heroDesc: "We offer you a unique reading experience with the best Arabic and Islamic books in various sciences and literature",
     exploreBooks: "Explore Books",
     learnMore: "Learn More",
-    
+
     // Stats
     book: "Book",
     books: "Books",
@@ -263,13 +263,13 @@ const translations = {
     reads: "Read",
     readsPlural: "Reads",
     rating: "Rating",
-    
+
     // Featured Section
     featured: "Featured",
     bookOfWeek: "Book of the Week",
     readMore: "Read More",
     read: "Read",
-    
+
     // Library Section
     library: "Library",
     availableBooks: "Available Books",
@@ -282,7 +282,7 @@ const translations = {
     newest: "Newest",
     favorites: "Favorites",
     all: "All",
-    
+
     // Categories Section
     browse: "Browse",
     categories: "Book Categories",
@@ -292,24 +292,24 @@ const translations = {
     poetryFull: "Poetry",
     rhetoric: "Rhetoric",
     rhetoricFull: "Rhetoric",
-    hadith: "Hadith",
-    hadithFull: "Hadith",
+    hadith: "School Students",
+    hadithFull: "School Students",
     history: "History",
     historyFull: "History",
     literature: "Literature",
     literatureFull: "Literature",
     tales: "Stories",
     talesFull: "Stories",
-    
+
     // Grammar descriptions
     grammarDesc: "Grammatical and linguistic sciences",
     poetryDesc: "Immortal Arabic poetry",
     rhetoricDesc: "Arts of eloquence and inimitability",
-    hadithDesc: "Sciences of the Prophet's tradition",
+    hadithDesc: "School stories and books",
     historyDesc: "Biographies and events",
     talesDesc: "Arabic and international stories",
     literatureDesc: "Arts of Arabic literature",
-    
+
     // Testimonials
     testimonials: "Reviews",
     whatReadersSay: "What Readers Say",
@@ -322,7 +322,7 @@ const translations = {
     testimonial3: "Honestly an exceptional library, everything a student or researcher is looking for is available.",
     testimonial3Author: "Mohamed Al-Shniti",
     testimonial3AuthorAvatar: "M",
-    
+
     // About Section
     aboutTitle: "About Us",
     aboutHeading: "Al-Bayan Library",
@@ -342,7 +342,7 @@ const translations = {
     goalText: "Facilitating access to Arabic knowledge for all Arabic speakers",
     location: "Location",
     schoolLocation: "Khalid ibn Al-Walid Secondary School / Al-Muwaqqar - Jordan",
-    
+
     // Contact Section
     contactTitle: "Contact",
     contactUs: "Contact Us",
@@ -358,7 +358,7 @@ const translations = {
     subject: "Subject",
     yourMessage: "Your message...",
     sendMessage: "Send Message",
-    
+
     // Footer
     footerBrand: "Al-Bayan Library",
     footerDesc: "A national Arabic cultural platform dedicated to spreading knowledge, culture and Arabic heritage",
@@ -369,7 +369,7 @@ const translations = {
     yourEmail: "Your email",
     copyright: "National Cultural Project",
     supervisedBy: "Supervised by Khalid ibn Al-Walid Secondary School / Al-Mowaqqr",
-    
+
     // Messages
     noResults: "No results found",
     tryDifferent: "Try different search terms",
@@ -379,7 +379,7 @@ const translations = {
     subscribed: "Thanks for subscribing!",
     fileNotAvailable: "File not available",
     increasedReads: "Increased reads for",
-    
+
     // Stories
     arabicStories: "Arabic Stories",
     storiesSubtitle: "A curated collection of the finest Arabic and heritage stories",
@@ -389,14 +389,14 @@ const translations = {
     natureStories: "Nature Stories",
     historicalStories: "Historical Stories",
     readStory: "Read Story",
-    
+
     // Book Modal
     by: "By",
     pages: "Pages",
     year: "Year",
     addToFavorites: "Add to Favorites",
     removeFromFavorites: "Remove from Favorites",
-    
+
     // Page Headers
     booksPageTitle: "Books Library",
     booksPageDesc: "Explore a diverse collection of Arabic books in various disciplines and sciences",
@@ -471,37 +471,39 @@ const translations = {
 // Books Database
 let books = [
   // النحو
-  { id: 2, title: "المغني في النحو", author: "ابن عقيل", category: "نحو", reads: 980, rating: 4.7, fav: false, desc: "كتاب شامل في النحو العربي.", pages: 480, year: 1220, cover: "blue",  pdf: "/Al-Bayan-Library/book-mgni.pdf" },
-  { id: 3, title: "الجرير والتنب", author: "المرزوقي", category: "نحو", reads: 650, rating: 4.5, fav: false, desc: "شرح نفيس على جرير والفرزدق.", pages: 320, year: 1100, cover: "green",  pdf: "/Al-Bayan-Library/book-jarir.pdf" },
-  { id: 4, title: "التسهيل", author: "ابن مالك", category: "نحو", reads: 820, rating: 4.6, fav: false, desc: "مختصر في النحو.", pages: 180, year: 1210, cover: "purple",  pdf: "/Al-Bayan-Library/book-tashel.pdf" },
-  
+  { id: 2, title: "المغني في النحو", author: "ابن عقيل", category: "نحو", reads: 980, rating: 4.7, fav: false, desc: "كتاب شامل في النحو العربي.", pages: 480, year: 1220, cover: "blue", pdf: "/Al-Bayan-Library/book-mgni.pdf" },
+  { id: 3, title: "الجرير والتنب", author: "المرزوقي", category: "نحو", reads: 650, rating: 4.5, fav: false, desc: "شرح نفيس على جرير والفرزدق.", pages: 320, year: 1100, cover: "green", pdf: "/Al-Bayan-Library/book-jarir.pdf" },
+  { id: 4, title: "التسهيل", author: "ابن مالك", category: "نحو", reads: 820, rating: 4.6, fav: false, desc: "مختصر في النحو.", pages: 180, year: 1210, cover: "purple", pdf: "/Al-Bayan-Library/book-tashel.pdf" },
+
   // الشعر
-  { id: 6, title: "ديوان المتنبي", author: "أبو الطيب المتنبي", category: "شعر", reads: 2100, rating: 4.95, fav: false, desc: "مجموعة من أشعار المتنبي الخالدة.", pages: 500, year: 960, cover: "purple",  pdf: "/Al-Bayan-Library/book-motanabi.pdf" },
-  { id: 7, title: "ديوان امرئ القيس", author: "امرئ القيس", category: "شعر", reads: 1850, rating: 4.8, fav: false, desc: "ديوان رائد الشعر الجاهلي.", pages: 380, year: 550, cover: "gold",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
-  { id: 8, title: "ديوان الحسن بن هرمة", author: "الحسن بن هرمة", category: "شعر", reads: 1200, rating: 4.7, fav: false, desc: "من اشهر الدواوين.", pages: 290, year: 650, cover: "red",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
-  { id: 9, title: "ديوان البحتري", author: "البحتري", category: "شعر", reads: 950, rating: 4.6, fav: false, desc: "مجموعة من اشعار البحتري.", pages: 420, year: 900, cover: "teal",  pdf: "/Al-Bayan-Library/book-bhtare.pdf" },
-  { id: 10, title: "ديوان ابن الرومي", author: "ابن الرومي", category: "شعر", reads: 780, rating: 4.5, fav: false, desc: "ديوان شاعر كبير.", pages: 350, year: 890, cover: "navy",  pdf: "/Al-Bayan-Library/book-romy.pdf" },
+  { id: 6, title: "ديوان المتنبي", author: "أبو الطيب المتنبي", category: "شعر", reads: 2100, rating: 4.95, fav: false, desc: "مجموعة من أشعار المتنبي الخالدة.", pages: 500, year: 960, cover: "purple", pdf: "/Al-Bayan-Library/book-motanabi.pdf" },
+  { id: 7, title: "ديوان امرئ القيس", author: "امرئ القيس", category: "شعر", reads: 1850, rating: 4.8, fav: false, desc: "ديوان رائد الشعر الجاهلي.", pages: 380, year: 550, cover: "gold", pdf: "/Al-Bayan-Library/book-qais.pdf" },
+  { id: 8, title: "ديوان الحسن بن هرمة", author: "الحسن بن هرمة", category: "شعر", reads: 1200, rating: 4.7, fav: false, desc: "من اشهر الدواوين.", pages: 290, year: 650, cover: "red", pdf: "/Al-Bayan-Library/book-qais.pdf" },
+  { id: 9, title: "ديوان البحتري", author: "البحتري", category: "شعر", reads: 950, rating: 4.6, fav: false, desc: "مجموعة من اشعار البحتري.", pages: 420, year: 900, cover: "teal", pdf: "/Al-Bayan-Library/book-bhtare.pdf" },
+  { id: 10, title: "ديوان ابن الرومي", author: "ابن الرومي", category: "شعر", reads: 780, rating: 4.5, fav: false, desc: "ديوان شاعر كبير.", pages: 350, year: 890, cover: "navy", pdf: "/Al-Bayan-Library/book-romy.pdf" },
 
   // البلاغة
-  { id: 11, title: "دلائل الإعجاز", author: "عبد القاهر الجرجاني", category: "بلاغة", reads: 890, rating: 4.7, fav: false, desc: "كتاب في بيان دلائل الإعجاز.", pages: 320, year: 1075, cover: "green",  pdf: "/Al-Bayan-Library/book-i3jaz.pdf" },
-  { id: 12, title: "البرهان في علوم القرآن", author: "الزمخشري", category: "بلاغة", reads: 720, rating: 4.6, fav: false, desc: "مقال في علوم البلاغة.", pages: 280, year: 1140, cover: "purple",  pdf: "/Al-Bayan-Library/book-brhan.pdf" },
-  { id: 13, title: "عروس الأفراح", author: "السيوطي", category: "بلاغة", reads: 580, rating: 4.5, fav: false, desc: "كتاب في علوم البلاغة.", pages: 220, year: 1500, cover: "orange",  pdf: "/Al-Bayan-Library/book-3ros.pdf" },
-  { id: 15, title: "الموالي في المعاني", author: "السيوطي", category: "بلاغة", reads: 390, rating: 4.3, fav: false, desc: "شرح نفيس.", pages: 250, year: 1450, cover: "teal",  pdf: "/Al-Bayan-Library/book-m3ani.pdf" },
+  { id: 11, title: "دلائل الإعجاز", author: "عبد القاهر الجرجاني", category: "بلاغة", reads: 890, rating: 4.7, fav: false, desc: "كتاب في بيان دلائل الإعجاز.", pages: 320, year: 1075, cover: "green", pdf: "/Al-Bayan-Library/book-i3jaz.pdf" },
+  { id: 12, title: "البرهان في علوم القرآن", author: "الزمخشري", category: "بلاغة", reads: 720, rating: 4.6, fav: false, desc: "مقال في علوم البلاغة.", pages: 280, year: 1140, cover: "purple", pdf: "/Al-Bayan-Library/book-brhan.pdf" },
+  { id: 13, title: "عروس الأفراح", author: "السيوطي", category: "بلاغة", reads: 580, rating: 4.5, fav: false, desc: "كتاب في علوم البلاغة.", pages: 220, year: 1500, cover: "orange", pdf: "/Al-Bayan-Library/book-3ros.pdf" },
+  { id: 15, title: "الموالي في المعاني", author: "السيوطي", category: "بلاغة", reads: 390, rating: 4.3, fav: false, desc: "شرح نفيس.", pages: 250, year: 1450, cover: "teal", pdf: "/Al-Bayan-Library/book-m3ani.pdf" },
 
-  // الحديث
-  { id: 21, title: "صحيح البخاري", author: "الإمام البخاري", category: "حديث", reads: 2500, rating: 5.0, fav: false, desc: "أصح كتب السنة النبوية.", pages: 2500, year: 870, cover: "navy",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
-  { id: 22, title: "صحيح مسلم", author: "الإمام مسلم", category: "حديث", reads: 2200, rating: 4.95, fav: false, desc: "ثاني اصح كتب السنة.", pages: 2200, year: 875, cover: "green",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
-  { id: 23, title: "سنن الترمذي", author: "الترمذي", category: "حديث", reads: 1650, rating: 4.8, fav: false, desc: "من كتب السنة المعتبرة.", pages: 1800, year: 892, cover: "purple",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
-  { id: 24, title: "سنن أبي داود", author: "أبو داود", category: "حديث", reads: 1400, rating: 4.7, fav: false, desc: "من السنن المشهورة.", pages: 1600, year: 889, cover: "red",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
-  { id: 25, title: "سنن النسائي", author: "النسائي", category: "حديث", reads: 1150, rating: 4.6, fav: false, desc: "من كتب السنة.", pages: 1500, year: 915, cover: "teal",  pdf: "/Al-Bayan-Library/book-qais.pdf" },
+  // طلاب المدرسة
+  { id: 21, title: "لُغتي فخري ", author: " مؤيد العابد", category: "طلاب المدرسة", reads: 2500, rating: 5.0, fav: false, desc: "شعر", pages: 2500, year: 870, cover: "navy", pdf: "/Al-Bayan-Library/moayad-abed.pdf" },
+  { id: 22, title: "سر الحديقة", author: "محمد نوباني", category: "طلاب المدرسة", reads: 2200, rating: 4.95, fav: false, desc: "قصة عن الحديقة", pages: 2200, year: 875, cover: "green", pdf: "/Al-Bayan-Library/nobani.pdf" },
+  { id: 23, title: "الفارس الشجاع", author: "عمر صدقي", category: "طلاب المدرسة", reads: 1650, rating: 4.8, fav: false, desc: "قصة قصيرة الفارس الشجاع", pages: 1800, year: 892, cover: "purple", pdf: "/Al-Bayan-Library/omar-sdqi.pdf" },
+  { id: 24, title: "رحلة الى القمر", author: "أحمد البريم", category: "طلاب المدرسة", reads: 1400, rating: 4.7, fav: false, desc: "قصة رحلة القمر", pages: 1600, year: 889, cover: "red", pdf: "/Al-Bayan-Library/bream.pdf" },
+  { id: 25, title: "لغة الضاد ", author: "إبراهيم أبو هليل", category: "طلاب المدرسة", reads: 1150, rating: 4.6, fav: false, desc: " مقالة بعنوان لغة الضاد هوية ..هوية ناطقة و وعاء للحضارة ", pages: 1500, year: 915, cover: "teal", pdf: "/Al-Bayan-Library/abo-hlail.pdf" },
+  { id: 41, title: " قصة قصيرة", author: "زاید النعانعة", category: "طلاب المدرسة", reads: 3200, rating: 4.8, fav: false, desc: "قصة قصيرة عن اللغة العربية", pages: 180, year: 2023, cover: "blue", pdf: "/Al-Bayan-Library/zaied.pdf" },
+  { id: 42, title: " غابة القوالق ", author: "طارق أبوغليون", category: "طلاب المدرسة", reads: 2800, rating: 4.9, fav: false, desc: "قصة بعنوان غابة القواعد", pages: 150, year: 2023, cover: "green", pdf: "/Al-Bayan-Library/yosef-abo.pdf" },
 
   // التاريخ
-  { id: 26, title: "مختصر تاريخ العرب", author: "حسن إبراهيم حسن", category: "تاريخ", reads: 1100, rating: 4.5, fav: false, desc: "ملخص شامل لتاريخ العرب.", pages: 420, year: 1960, cover: "red",  pdf: "/Al-Bayan-Library/book-arab.pdf" },
-  { id: 29, title: "تاريخ ابن خلدون", author: "ابن خلدون", category: "تاريخ", reads: 1600, rating: 4.95, fav: false, desc: "مقدمة في علم العمران.", pages: 1200, year: 1375, cover: "green",  pdf: "/Al-Bayan-Library/book-ebn.pdf" },
+  { id: 26, title: "مختصر تاريخ العرب", author: "حسن إبراهيم حسن", category: "تاريخ", reads: 1100, rating: 4.5, fav: false, desc: "ملخص شامل لتاريخ العرب.", pages: 420, year: 1960, cover: "red", pdf: "/Al-Bayan-Library/book-arab.pdf" },
+  { id: 29, title: "تاريخ ابن خلدون", author: "ابن خلدون", category: "تاريخ", reads: 1600, rating: 4.95, fav: false, desc: "مقدمة في علم العمران.", pages: 1200, year: 1375, cover: "green", pdf: "/Al-Bayan-Library/book-ebn.pdf" },
 
   // الأدب
-  { id: 31, title: "الحديث في الفن", author: "أحمد حسن الزيات", category: "أدب", reads: 750, rating: 4.6, fav: false, desc: "دراسة شاملة لفن الحديث.", pages: 180, year: 1945, cover: "orange",  pdf: "/Al-Bayan-Library/book-hdath.pdf" },
-  { id: 35, title: "الأغاني", author: "الأصفهاني", category: "أدب", reads: 920, rating: 4.8, fav: false, desc: "من اكبر كتب الأدب.", pages: 3000, year: 980, cover: "red",  pdf: "/Al-Bayan-Library/book-agani.pdf" },
+  { id: 31, title: "الحديث في الفن", author: "أحمد حسن الزيات", category: "أدب", reads: 750, rating: 4.6, fav: false, desc: "دراسة شاملة لفن الحديث.", pages: 180, year: 1945, cover: "orange", pdf: "/Al-Bayan-Library/book-hdath.pdf" },
+  { id: 35, title: "الأغاني", author: "الأصفهاني", category: "أدب", reads: 920, rating: 4.8, fav: false, desc: "من اكبر كتب الأدب.", pages: 3000, year: 980, cover: "red", pdf: "/Al-Bayan-Library/book-agani.pdf" },
 
 ];
 
@@ -513,7 +515,7 @@ let categoryFilter = "all";
 let sortFilter = "default";
 
 // Initialize
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   initApp();
   setupScrollEffects();
 });
@@ -536,29 +538,29 @@ function initParallax() {
   const heroVisual = document.querySelector('.hero-visual');
   const floatingBooks = document.querySelectorAll('.floating-book');
   const heroCircle = document.querySelector('.hero-circle');
-  
+
   // التحقق من وجود العناصر
   if (!heroSection) return;
-  
+
   let mouseX = 0;
   let mouseY = 0;
   let currentX = 0;
   let currentY = 0;
-  
+
   // دالة لتحديث الموقع
   function updatePosition() {
     // حساب الفرق بين الموقع الحالي والموقع المستهدف
     currentX += (mouseX - currentX) * 0.08;
     currentY += (mouseY - currentY) * 0.08;
-    
+
     // تطبيق التحويل على قسم الهيدرو
     const moveX = (mouseX - window.innerWidth / 2) * 0.015;
     const moveY = (mouseY - window.innerHeight / 2) * 0.015;
-    
+
     if (heroSection) {
       heroSection.style.transform = `translate(${moveX}px, ${moveY}px)`;
     }
-    
+
     // تحريك العناصر العائمة بسرعات مختلفة
     if (floatingBooks.length > 0) {
       floatingBooks.forEach((book, index) => {
@@ -568,44 +570,44 @@ function initParallax() {
         book.style.transform = `translate(${bookMoveX}px, ${bookMoveY}px)`;
       });
     }
-    
+
     // تحريك الدائرة الخلفية بسرعة مختلفة
     if (heroCircle) {
       const circleMoveX = (mouseX - window.innerWidth / 2) * 0.02;
       const circleMoveY = (mouseY - window.innerHeight / 2) * 0.02;
       heroCircle.style.transform = `translate(${circleMoveX}px, ${circleMoveY}px)`;
     }
-    
+
     requestAnimationFrame(updatePosition);
   }
-  
+
   // تتبع حركة المؤشر
   document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
   });
-  
+
   // بدء التحديث
   updatePosition();
-  
+
   // تأثير إضافي: تحريك البطاقات والعناصر عند تمرير المؤشر
   const cards = document.querySelectorAll('.book-card, .category-card, .testimonial-card, .about-card, .contact-item');
-  
+
   cards.forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
-      
+
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
-      
+
       const rotateX = (y - centerY) / 20;
       const rotateY = (centerX - x) / 20;
-      
+
       card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(10px)`;
     });
-    
+
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
     });
@@ -620,7 +622,7 @@ function setupEventListeners() {
   }
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       e.preventDefault();
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
@@ -631,19 +633,19 @@ function setupEventListeners() {
 
   const bookModal = document.getElementById('bookModal');
   if (bookModal) {
-    bookModal.addEventListener('click', function(e) {
+    bookModal.addEventListener('click', function (e) {
       if (e.target === this) closeModal();
     });
   }
 
-  document.addEventListener('keydown', function(e) {
+  document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeModal();
   });
 }
 
 // Scroll Effects
 function setupScrollEffects() {
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     const header = document.querySelector('.main-header');
     if (header) {
       header.classList.toggle('scrolled', window.scrollY > 50);
@@ -661,7 +663,7 @@ function displayFeaturedBook() {
   if (!container) return;
 
   const topBook = books.reduce((a, b) => b.reads > a.reads ? b : a);
-  
+
   container.innerHTML = `
     <div class="featured-book-cover" style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);">
       ${getBookEmoji(topBook.category)}
@@ -690,8 +692,8 @@ function displayBooks() {
 
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
-    filteredBooks = filteredBooks.filter(b => 
-      b.title.toLowerCase().includes(q) || 
+    filteredBooks = filteredBooks.filter(b =>
+      b.title.toLowerCase().includes(q) ||
       b.author.toLowerCase().includes(q) ||
       b.category.toLowerCase().includes(q)
     );
@@ -786,18 +788,18 @@ function filterBooks() {
   const searchInput = document.getElementById('searchInput');
   const categoryFilterSelect = document.getElementById('categoryFilter');
   const sortFilterSelect = document.getElementById('sortFilter');
-  
+
   if (searchInput) searchQuery = searchInput.value;
   if (categoryFilterSelect) categoryFilter = categoryFilterSelect.value;
   if (sortFilterSelect) sortFilter = sortFilterSelect.value;
-  
+
   displayBooks();
 }
 
 function filterByCategory(category) {
   const categoryFilterSelect = document.getElementById('categoryFilter');
   const booksSection = document.getElementById('books');
-  
+
   if (categoryFilterSelect) {
     categoryFilter = category;
     categoryFilterSelect.value = category;
@@ -905,15 +907,15 @@ function toggleLanguage() {
   currentLang = currentLang === "ar" ? "en" : "ar";
   document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
   document.documentElement.lang = currentLang;
-  
+
   const langBtn = document.querySelector('.lang-btn');
   if (langBtn) langBtn.textContent = currentLang === "ar" ? "EN" : "AR";
-  
+
   localStorage.setItem('language', currentLang);
-  
+
   // Translate all page elements
   translatePage();
-  
+
   showToast(currentLang === "ar" ? "العربية" : "English", 'success');
 }
 
@@ -926,7 +928,7 @@ function translatePage() {
       el.textContent = translations[currentLang][key];
     }
   });
-  
+
   // Translate placeholders
   const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
   placeholders.forEach(el => {
@@ -935,7 +937,7 @@ function translatePage() {
       el.placeholder = translations[currentLang][key];
     }
   });
-  
+
   // Translate titles/tooltips
   const titles = document.querySelectorAll('[data-i18n-title]');
   titles.forEach(el => {
@@ -957,7 +959,7 @@ function loadPreferences() {
     // Translate page on load if language is English
     translatePage();
   }
-  
+
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'light') {
     document.body.classList.add('light');
@@ -1044,13 +1046,13 @@ function generateStars(rating) {
 }
 
 function getBookEmoji(category) {
-  const emojis = { 'نحو': '✏️', 'شعر': '📝', 'بلاغة': '✨', 'أدب': '📖', 'تاريخ': '🏛️', 'حديث': '🕌', 'قصص': '📜' };
+  const emojis = { 'نحو': '✏️', 'شعر': '📝', 'بلاغة': '✨', 'أدب': '📖', 'تاريخ': '🏛️', 'حديث': '🕌', 'قصص': '📜', 'طلاب المدرسة': '🏫' };
   return emojis[category] || '📚';
 }
 
 function debounce(func, wait) {
   let timeout;
-  return function(...args) {
+  return function (...args) {
     clearTimeout(timeout);
     timeout = setTimeout(() => func.apply(this, args), wait);
   };
@@ -1077,6 +1079,7 @@ window.showBarcode = showBarcode;
 window.closeBarcodeModal = closeBarcodeModal;
 window.loadPreferences = loadPreferences;
 window.translatePage = translatePage;
+
 
 
 
