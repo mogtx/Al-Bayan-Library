@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مكتبة البيان | المنصة الثقافية الوطنية</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مكتبة البيان | المنصة الثقافية الوطنية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 
 
 </head>
@@ -49,9 +53,11 @@
         <span class="title-main" data-i18n="libraryName">مكتبة البيان</span>
         <span class="title-sub" data-i18n="platformSubtitle">منصة ثقافة عربية وطنية</span>
       </h1>
-      <p class="hero-description" data-i18n="heroDesc">نقدم لك تجربة قراءة فريدة مع أفضل الكتب العربية والإسلامية في مختلف العلوم والآداب</p>
+      <p class="hero-description" data-i18n="heroDesc">نقدم لك تجربة قراءة فريدة مع أفضل الكتب العربية والإسلامية في
+        مختلف العلوم والآداب</p>
       <div class="hero-buttons">
-        <a href="pages/books.html" class="btn-primary" data-i18n="exploreBooks">استكشف الكتب <i class="fas fa-arrow-left"></i></a>
+        <a href="pages/books.html" class="btn-primary" data-i18n="exploreBooks">استكشف الكتب <i
+            class="fas fa-arrow-left"></i></a>
         <a href="pages/about.html" class="btn-secondary" data-i18n="learnMore">اعرف المزيد</a>
       </div>
     </div>
@@ -112,7 +118,8 @@
     <div class="search-filter-bar">
       <div class="search-box">
         <i class="fas fa-search"></i>
-        <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث عن كتاب..." oninput="filterBooks()">
+        <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث عن كتاب..."
+          oninput="filterBooks()">
       </div>
       <div class="filter-group">
         <select id="categoryFilter" onchange="filterBooks()">
@@ -120,7 +127,7 @@
           <option value="نحو" data-i18n="grammarFull">النحو</option>
           <option value="شعر" data-i18n="poetryFull">الشعر</option>
           <option value="بلاغة" data-i18n="rhetoricFull">البلاغة</option>
-          <option value="حديث" data-i18n="hadithFull">الحديث</option>
+          <option value="طلاب المدرسة" data-i18n="hadithFull">طلاب المدرسة</option>
           <option value="تاريخ" data-i18n="historyFull">التاريخ</option>
           <option value="أدب" data-i18n="literatureFull">الأدب</option>
           <option value="قصص" data-i18n="talesFull">القصص</option>
@@ -172,10 +179,10 @@
         <h3 data-i18n="rhetoricFull">البلاغة</h3>
         <p data-i18n="rhetoricDesc">فنون البيان والإعجاز</p>
       </div>
-      <div class="category-card" onclick="filterByCategory('حديث')">
+      <div class="category-card" onclick="filterByCategory('طلاب المدرسة')">
         <div class="category-icon"><i class="fas fa-book-open"></i></div>
-        <h3 data-i18n="hadithFull">الحديث</h3>
-        <p data-i18n="hadithDesc">علوم السنة النبوية</p>
+        <h3 data-i18n="hadithFull">طلاب المدرسة</h3>
+        <p data-i18n="hadithDesc">قصص وكتب مدرسية</p>
       </div>
       <div class="category-card" onclick="filterByCategory('تاريخ')">
         <div class="category-icon"><i class="fas fa-landmark"></i></div>
@@ -267,8 +274,13 @@
       <div class="about-content">
         <span class="section-badge" data-i18n="aboutTitle">من نحن</span>
         <h2 data-i18n="aboutHeading">مكتبة البيان</h2>
-        <p data-i18n="aboutDesc">نشأت هذه المكتبة استجابةً لإعلان وزارة التربية والتعليم عن مسابقة "أفضل مدرسة داعمة للغة العربية" تحت عنوان "صوت الضاد"، وذلك بهدف إبراز مكانة اللغة العربية وتعزيز حضورها بين الطلبة بأساليب إبداعية ومعاصرة.</p>
-         <p data-i18n="aboutDesc">وقد تم إعداد وتصميم هذا الموقع بواسطة الطالب محمد مصطفى شومان و بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر، ليكون منصة تعليمية تجمع بين المعرفة والمتعة، وتقدم محتوى متنوعًا في مجالات اللغة العربية من معاجم وشعر وقصص ونحو وبلاغة، بما يسهم في خدمة لغتنا الجميلة وترسيخ حبها في نفوس الطلبة.</p>
+        <p data-i18n="aboutDesc">نشأت هذه المكتبة استجابةً لإعلان وزارة التربية والتعليم عن مسابقة "أفضل مدرسة داعمة
+          للغة العربية" تحت عنوان "صوت الضاد"، وذلك بهدف إبراز مكانة اللغة العربية وتعزيز حضورها بين الطلبة بأساليب
+          إبداعية ومعاصرة.</p>
+        <p data-i18n="aboutDesc">وقد تم إعداد وتصميم هذا الموقع بواسطة الطالب محمد مصطفى شومان و بإشراف مدرسة خالد بن
+          الوليد الثانوية للبنين / لواء الموقر، ليكون منصة تعليمية تجمع بين المعرفة والمتعة، وتقدم محتوى متنوعًا في
+          مجالات اللغة العربية من معاجم وشعر وقصص ونحو وبلاغة، بما يسهم في خدمة لغتنا الجميلة وترسيخ حبها في نفوس
+          الطلبة.</p>
         <div class="about-features">
           <div class="feature-item">
             <i class="fas fa-check-circle"></i>
@@ -352,9 +364,10 @@
           </div>
         </div>
         <div class="social-links">
-          <a href="https://www.facebook.com/MOHAMAD.2.0.0.8.Sho" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/MOHAMAD.2.0.0.8.Sho" class="social-link"><i
+              class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/m7md.shoman" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
       <div class="contact-form">
@@ -364,11 +377,13 @@
             <i class="fas fa-user"></i>
           </div>
           <div class="form-group">
-            <input type="email" id="contactEmail" required data-i18n-placeholder="yourEmail" placeholder="البريد الإلكتروني">
+            <input type="email" id="contactEmail" required data-i18n-placeholder="yourEmail"
+              placeholder="البريد الإلكتروني">
             <i class="fas fa-envelope"></i>
           </div>
           <div class="form-group">
-            <textarea id="contactMessage" required data-i18n-placeholder="yourMessage" placeholder="رسالتك..." rows="5"></textarea>
+            <textarea id="contactMessage" required data-i18n-placeholder="yourMessage" placeholder="رسالتك..."
+              rows="5"></textarea>
             <i class="fas fa-comment"></i>
           </div>
           <button type="submit" class="btn-submit">
@@ -385,7 +400,9 @@
 <footer class="main-footer">
   <div class="footer-wave">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+        class="shape-fill"></path>
     </svg>
   </div>
   <div class="footer-content">
@@ -424,7 +441,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 <span data-i18n="footerBrand">مكتبة البيان</span> - <span data-i18n="copyright">مشروع ثقافي وطني</span></p>
+        <p>© 2026 <span data-i18n="footerBrand">مكتبة البيان</span> - <span data-i18n="copyright">مشروع ثقافي
+            وطني</span></p>
         <p data-i18n="supervisedBy">بإشراف مدرسة خالد بن الوليد الثانوية للبنين / لواء الموقر</p>
         <p>تصميم وتطوير: الطالب المهندس محمد مصطفى شومان</p>
       </div>
@@ -454,10 +472,5 @@
 
 <script src="script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
